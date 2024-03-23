@@ -23,7 +23,6 @@ services:
       - .:/app
     ports:
       - "${PORT}:${PORT}"
-      - "${APP_PORT}:${APP_PORT}"
 
 volumes:
   redis_data:
