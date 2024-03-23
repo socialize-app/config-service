@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 
 async function bootstrap() {
-  const port = Number(process.env.PORT);
+  const port = Number(process.env.CONFIG_SERVICE_PORT);
   if (!port) {
     throw new Error('Port is not defined in .env file');
   }
