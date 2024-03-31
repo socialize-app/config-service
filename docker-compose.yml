@@ -18,11 +18,11 @@ services:
     depends_on:
       - redis
     env_file:
-      - .env.production
+      - .env
     volumes:
       - .:/app
     ports:
-      - "${PORT}:${PORT}"
+      - "${CONFIG_SERVICE_PORT}:${CONFIG_SERVICE_PORT}"
 
 volumes:
   redis_data:

@@ -16,7 +16,7 @@ COPY ./dist ./dist
 
 # Expose the port the app runs on
 ARG PORT
-ENV PORT $PORT
+ENV CONFIG_SERVICE_PORT $PORT
 
 EXPOSE $PORT
 

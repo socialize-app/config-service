@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "db": "docker-compose -f docker-compose.yml up -d redis",
+    "start:db": "docker-compose -f docker-compose.yml up -d redis",
     "dev": "nest start --watch",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
