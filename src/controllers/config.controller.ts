@@ -12,7 +12,7 @@ import { RedisService } from '../services/redis.service';
 export class ConfigController {
   constructor(private readonly redisService: RedisService) {}
 
-  @EventPattern('set')
+  @MessagePattern({ cmd: 'set' })
   async set(
     @Payload() data: { key: string; value: any },
     @Ctx() context: RmqContext,
